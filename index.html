@@ -1,0 +1,30 @@
+
+
+<script>
+    
+    let genrate=()=>{
+   
+    for( i=1;i<=10;i=i+1){
+        let randomnumber=Math.floor(Math.random()*10)
+    var guessnumber=prompt("Guess the number between 1 and 10:")
+    if(randomnumber==guessnumber){
+        alert(`congrjualtion your guess is correct ${guessnumber} attempts: ${i}`)
+        break;
+        
+    }
+    else{
+        
+        if(guessnumber>randomnumber){
+            alert(`Too high.Try again ${randomnumber}`)
+        }
+        else{
+            alert("Too low.Try again "+randomnumber)
+        }
+
+    }
+
+   } 
+}
+    genrate() 
+
+</script>
